@@ -33,6 +33,10 @@ form.example::after {
     display: table;
 }
 
+.container-body {
+    border-radius: 10px;
+}
+
 .btn-group button:not(:last-child) {
     border-right: none;
 }
@@ -44,7 +48,8 @@ form.example::after {
     float: left;
 }
 
-[type="file"] {
+
+/* [type="file"] {
     height: 0;
     overflow: hidden;
     width: 0;
@@ -58,7 +63,7 @@ form.example::after {
     display: inline-block;
     outline: none;
     vertical-align: middle;
-}
+} */
 
 form.example label:hover {
     background: #05ce0b;
@@ -69,4 +74,72 @@ form.example label:hover {
     opacity: 1;
     filter: alpha(opacity=50);
     /* sử dụng cho IE8 trở về trước */
+}
+
+.tab-box {
+    width: 45px;
+    height: 40px;
+    border-radius: 5px;
+    border: green;
+    outline: none;
+}
+
+.btn-search {
+    height: 40px;
+    border-radius: 10px;
+    border: green;
+    outline: none;
+    background-color: #4CAF50;
+    width: 100px;
+    text-align: center;
+}
+
+.btn-search:hover {
+    background: #05ce0b;
+}
+
+.bar-search {
+    outline: none;
+    border: none;
+    width: 350px;
+    height: auto;
+}
+
+.content {
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+    width: fit-content;
+    padding: 8px;
+    margin: auto;
+}
+
+.content:hover {
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+    border-color: rgba(223, 225, 229, 0);
+}
+
+.form-control-file {
+    height: auto;
+    width: auto;
+}
+
+.my-btn {
+    position: relative;
+    border: none;
+    background-color: white;
+}
+
+.input-file {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.btn-search2 {
+    border: none;
+    background-color: white;
 }
